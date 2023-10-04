@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title> ToDo App </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+  </head>
+<body>
+  <h1> ToDo List </h1>
+  <div class="container">
+
+<form action ="/addtask" method="POST">
+       <input type="text" name="newtask" placeholder="add new task"><button> Add Task </button>
+<h2> Added Task </h2>
+   <%tasks.forEach(element => { %>
+    <li><input type="checkbox" name="check" value="<%= element %>"/> <%= element %> </li>
+   <% }) %></form>
+ <form action="/removetask" method="post"></form><button type="submit"> Remove </button>
+</form>
+<h2>Completed Tasks</h2>
+<ul>
+    <% completedTasks.forEach((element, index) => { %>
+        <li>
+            <input type="checkbox" name="completed" value="<%= index %>">
+            <%= element %>
+        </li>
+    <% }) %>
+</ul>
+
+</div>
+</body>
+</html>

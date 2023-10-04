@@ -1,0 +1,58 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Nabla', cursive;
+  font-size: 3rem;
+  margin:  2%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: grid;
+  width: 50%;
+  margin: auto;
+  display:grid;
+  grid-template-columns: 250px 250px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;align-content: center;
+}
+
+.btn {
+  margin: 25px;
+  display: grid;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 50%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
